@@ -17,7 +17,7 @@ namespace game.player
             LoadData();
         }
 
-        public int Coin => save.coin;
+        public int Gold => save.gold;
         public int PeCoin => save.petCoin;
         public int Gem => save.gem;
 
@@ -39,9 +39,9 @@ namespace game.player
         void WriteToLiveData() => _runtimeData.SetResources(save);
 
 
-        public void AddCoin(int value) => ChangeCoin(value);
-        public void RemoveCoin(int value) => ChangeCoin(-value);
-        void ChangeCoin(int value) => Change(value, 0, 0);
+        public void AddGold(int value) => ChangeGold(value);
+        public void RemoveGold(int value) => ChangeGold(-value);
+        void ChangeGold(int value) => Change(value, 0, 0);
 
 
         public void AddPetCoin(int value) => ChangePetCoin(value);
@@ -59,7 +59,7 @@ namespace game.player
 
         void Change(int coin, int petCoin, int gem)
         {
-            save.coin += coin;
+            save.gold += coin;
             save.petCoin += petCoin;
             save.gem += gem;
             SaveData();

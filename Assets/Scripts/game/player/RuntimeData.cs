@@ -54,7 +54,7 @@ namespace game.player
         public void SetResources(UserResourceData res)
         {
             resources.gem = res.gem;
-            resources.coin = res.coin;
+            resources.gold = res.gold;
         }
     }
 }

@@ -305,6 +305,7 @@ namespace game.player
 
             totalScore += value;
 
+            GameManager.Instance.UserResourceSave.AddGold(value);
             EventAdd(value, true);
             EventChange(totalScore);
             RefreshRuntimeData();

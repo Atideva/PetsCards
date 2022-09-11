@@ -14,7 +14,7 @@ namespace app.settings
         [SerializeField] float livesPerPair;
         [Header("Animation")]
         [SerializeField] float pairFlipBackDelay = 0.3f;
-        [SerializeField] [Range(0.2f, 5f)] float firstSessionDelay; //dont ask, let triger Sequence-> CheckLevelMode
+        [SerializeField]   float firstSessionDelay; //dont ask, let triger Sequence-> CheckLevelMode
 
         public int CoinPerPair => coinPerPair;
         public float ComboBonusPerRow => bonusPerRow;

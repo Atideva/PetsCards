@@ -18,4 +18,4 @@ MonoBehaviour:
   secondsPerPair: 4
   livesPerPair: 1.25
   pairFlipBackDelay: 0.3
-  firstSessionDelay: 2.5
+  firstSessionDelay: 1.5

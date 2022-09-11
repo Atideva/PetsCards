@@ -36615,9 +36615,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7bfd4c1576c6940a0e3a6abc2784a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelID: {fileID: 8797638309080167761}
-  levelName: {fileID: 846831816780336731}
-  showTime: 2.5
+  levelID: {fileID: 846831816780336731}
+  levelName: {fileID: 8797638309080167761}
+  showTime: 2
   fadeTime: 0.5
   pvpModeText:
   - {fileID: 2450902096449645118}

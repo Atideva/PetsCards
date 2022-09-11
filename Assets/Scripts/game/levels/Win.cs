@@ -16,14 +16,23 @@ namespace game.levels
         [SerializeField] WinPopupUI winPopupUI;
         [SerializeField] WinPvpUI winPvpUI;
         [SerializeField] LevelPVPUI pvp;
+        int gems;
 
         void Start()
         {
+            var curLvl = GameManager.Instance ? GameManager.Instance.CurrentLevel : null;
+            var lvlData = GameManager.Instance ? GameManager.Instance.FindData(curLvl) : null;
+            gems = lvlData != null
+                ? lvlData.isComplete
+                    ? 0
+                    : 1
+                : 0;
             Events.Instance.OnWin += OnWin;
         }
 
         void OnWin()
         {
+            if (gems > 0) GameManager.Instance.UserResourceSave.AddGem(gems);
             AudioManager.Instance.PlaySound(levelWinSound);
             Invoke(GameManager.Instance.IsPvP ? nameof(ShowPvpUI) : nameof(ShowUI), 0.65f);
         }
@@ -32,20 +41,15 @@ namespace game.levels
         {
             winPvpUI.Show(pvp.GetWinnerID());
         }
+
         void ShowUI()
         {
             var curLvl = GameManager.Instance ? GameManager.Instance.CurrentLevel : null;
             var nextLvl = GameManager.Instance ? GameManager.Instance.NextLevel : null;
-            var coins = score.TotalScore;
+            var gold = score.TotalScore;
             var petCoins = petCoinScore.TotalCoins;
-            var lvlData = GameManager.Instance ? GameManager.Instance.FindData(curLvl) : null;
-            var gems = lvlData != null
-                ? lvlData.isComplete
-                    ? 0
-                    : 1
-                : 0;
 
-            winPopupUI.Show(coins,petCoins, gems, curLvl, nextLvl);
+            winPopupUI.Show(gold, petCoins, gems, curLvl, nextLvl);
         }
     }
 }

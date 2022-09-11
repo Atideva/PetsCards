@@ -189,8 +189,8 @@ namespace game.cards.layout
                 //TODO: its layout for 2x4 cards
                 if (table.columns == 2 && table.rows == 4)
                 {
-                    cardSizeX *= 0.9f;
-                    cardSizeY *= 0.9f;
+                    cardSizeX *= 0.8f;
+                    cardSizeY *= 0.8f;
                 }
 
                 paddingX = autoSizeCardsPaddingX * cardSizeX;
@@ -199,8 +199,8 @@ namespace game.cards.layout
                 //TODO: its layout for 2x4 cards
                 if (table.columns == 2 && table.rows == 4)
                 {
-                    paddingX *= 0.8f;
-                    paddingY *= 0.8f;
+                    paddingX *= 0.6f;
+                    paddingY *= 0.6f;
                 }
                 //TODO: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 

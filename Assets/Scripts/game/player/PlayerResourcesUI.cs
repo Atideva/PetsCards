@@ -26,7 +26,7 @@ namespace game.player
 
         void RefreshText()
         {
-            if (txtCoin) txtCoin.text = _res.Coin.ToString();
+            if (txtCoin) txtCoin.text = _res.Gold.ToString();
             if (txtGem) txtGem.text = _res.Gem.ToString();
             if (txtPetCoin) txtPetCoin.text = _res.PeCoin.ToString();
         }

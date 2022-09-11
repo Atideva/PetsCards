@@ -3,8 +3,8 @@
     [System.Serializable]
     public class UserResourceData
     {
-        public int coin;
-        public int petCoin;
+        public int gold;
         public int gem;
+        public int petCoin;
     }
 }

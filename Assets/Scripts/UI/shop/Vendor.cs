@@ -34,9 +34,9 @@ namespace UI.shop
 
         public bool TryBuy_UseGold(int value)
         {
-            if (_userResourceSave.Coin >= value)
+            if (_userResourceSave.Gold >= value)
             {
-                _userResourceSave.RemoveCoin(value);
+                _userResourceSave.RemoveGold(value);
                 return true;
             }
             else
@@ -56,7 +56,7 @@ namespace UI.shop
 
         public bool TryBuy_UseMultiResources(int gold, int gem)
         {
-            if (_userResourceSave.Coin >= gold &&
+            if (_userResourceSave.Gold >= gold &&
                 _userResourceSave.Gem >= gem)
             {
                 _userResourceSave.Subtract(gold, 0, gem);
