@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3cfee55433a7bf40b134085268daf36, type: 3}
+  m_Name: __GAME
+  m_EditorClassIdentifier: 
+  useCardsDebugText: 0
+  useCardsDebugRibbon: 0
+  unlockAllCards: 1
+  runtimeData: {fileID: 11400000, guid: 1b1e9f7ff03ee84488fbfc389924e11c, type: 2}
+  baseUnlockCards: {fileID: 11400000, guid: 262a4b1acf0411b4ca150a560c9dad84, type: 2}
+  campaignLevels: {fileID: 11400000, guid: 33585c3738fe4284ca516fbc03fef248, type: 2}
+  otherLevel: {fileID: 11400000, guid: c72d8ea844516634f8d5dfcdcdf8a6a6, type: 2}
+  baseUnlockLevels: {fileID: 11400000, guid: 08fdf64ee8b351c4db1fa9a55849abb1, type: 2}
+  settings: {fileID: 11400000, guid: a0a179833a26570448f5c8e941b835a9, type: 2}
+  sound: {fileID: 11400000, guid: 37daec2018476f84fa593b04f39b219a, type: 2}
+  music: {fileID: 11400000, guid: b7f8d8a437113174fa7a2a57feff5243, type: 2}
+  pairColors: {fileID: 11400000, guid: eaab02dfe758f4d4a940e6b8f5d67d3b, type: 2}
+  visual: {fileID: 11400000, guid: 8f0b31d39d502ac49bfa14b37fe798f3, type: 2}

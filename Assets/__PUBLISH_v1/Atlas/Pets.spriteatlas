@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Pets
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 954abd2136785b64dbe8d36cc8b9684e, type: 3}
+    - {fileID: 102900000, guid: 202192ad1b35fdd4e94f4bd431fca5f4, type: 3}
+    - {fileID: 102900000, guid: 4753262de2ee05847826141f2617b8d3, type: 3}
+    - {fileID: 102900000, guid: 6b5726fa24dcd2845a60f9af91118d6c, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: a2fd0f20a4f60b340a98bee9c25c3f22, type: 3}
+  - {fileID: 21300000, guid: c2a64840d4c97294bb63bf081edce764, type: 3}
+  - {fileID: 21300000, guid: 92b85450d352cde4289afe28b4b84c9b, type: 3}
+  - {fileID: 21300000, guid: 94e478a084dd48a42bd382102a3f47c1, type: 3}
+  - {fileID: 21300000, guid: ebe58cb06850b604d832e2127be70d56, type: 3}
+  - {fileID: 21300000, guid: c1ddd0e2cfd56cc47aaa1cfea6e2a303, type: 3}
+  - {fileID: 21300000, guid: 27b557533125ec747be3f342827e69e9, type: 3}
+  - {fileID: 21300000, guid: e663ea1431295124eaae79703a363455, type: 3}
+  - {fileID: 21300000, guid: ebd035544774ded40acc52e4007d3a53, type: 3}
+  - {fileID: 21300000, guid: e7c43635d14bb1b41b0b7f806ed7cbae, type: 3}
+  - {fileID: 21300000, guid: 547536759977ecc4483701e71450b99c, type: 3}
+  - {fileID: 21300000, guid: 5bfa9f95c8b48dc4082365a1ef30cfa8, type: 3}
+  - {fileID: 21300000, guid: 4a33bf564762afb47a8bb72105f30bfc, type: 3}
+  - {fileID: 21300000, guid: d4fade66e4907d545a5008d9e0cf18b4, type: 3}
+  - {fileID: 21300000, guid: 2777138647495bd4b9bf4e50bfc2bace, type: 3}
+  - {fileID: 21300000, guid: 424ea2089f5d9b94a83c9f45808ad4eb, type: 3}
+  - {fileID: 21300000, guid: bead88984c650e6498ccbd74f624bdfa, type: 3}
+  - {fileID: 21300000, guid: aae7d99af2d438545898b32ea422a355, type: 3}
+  - {fileID: 21300000, guid: 339ee22c881cd84488ecddbdb9549211, type: 3}
+  - {fileID: 21300000, guid: d944749c5f995694e9ef6578180eded8, type: 3}
+  - {fileID: 21300000, guid: 5d0836dd253c4784280aed0bc07e7eac, type: 3}
+  - {fileID: 21300000, guid: 6e031dfda9475484a9c04a18fa3e4963, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - pet_boar
+  - pet_goat
+  - pet_dachshund
+  - pet_a_hen2
+  - pet_coyote
+  - pet_onion
+  - pet_pony
+  - pet_rooster
+  - pet_onion2
+  - chick_babe (!)
+  - pet_cat1
+  - pet_a_hen1
+  - pet_onion3
+  - pet_onionZoom
+  - pet_wolf
+  - pet_sheep_white
+  - pet_cat2
+  - pet_pig
+  - hen_egg (!)
+  - pet_cow
+  - pet_sheep
+  - pet_cat3
+  m_RenderDataMap: {}
+  m_Tag: Pets
+  m_IsVariant: 0

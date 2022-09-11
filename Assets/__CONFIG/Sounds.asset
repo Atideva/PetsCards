@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a6eb011a5b65449aecd725f49f73cc, type: 3}
+  m_Name: Sounds
+  m_EditorClassIdentifier: 
+  cardsLayout: {fileID: 11400000, guid: 27c4474bad4c17743822a7537974f533, type: 2}
+  cardFlip: {fileID: 11400000, guid: 11d6c28fae1e3af448458f3acceecbe8, type: 2}
+  cardFlipBack: {fileID: 11400000, guid: b316b215ed35688489fce3bccf1eb51f, type: 2}
+  roundComplete: {fileID: 11400000, guid: b3ac5bb3ef42dd441976d12a9c8fa303, type: 2}
+  liveHeal: {fileID: 11400000, guid: cd1b8cccee34c0e4e9d2309f312662ce, type: 2}
+  liveDamage: {fileID: 11400000, guid: ec4e0dadb9c39b946ad877ab7122c2bf, type: 2}
+  scoreUp: {fileID: 11400000, guid: 019b1192fe4a84343a831f63c25bf3c4, type: 2}
+  comboUp: {fileID: 11400000, guid: fd1e606490afd84468c43eefee9289e2, type: 2}
+  scoreUpByCombo: {fileID: 11400000, guid: 019b1192fe4a84343a831f63c25bf3c4, type: 2}
+  comboTrail: {fileID: 11400000, guid: 87f5b047bfed10c4f9668363b795b39d, type: 2}
+  coinTrail: {fileID: 11400000, guid: ac816f90e2bd39f429b4a812f3216a11, type: 2}
+  pairMiss: {fileID: 11400000, guid: 1882e93489ad51144871be438cba35c3, type: 2}
+  pairSuccess: {fileID: 11400000, guid: bea42cbc34ea159468cdb993500ffebc, type: 2}
+  sliderCardCollect: {fileID: 11400000, guid: 6b115d7f45401c3458a15d80bbe75575, type: 2}
+  sliderRoundComplete: {fileID: 11400000, guid: e48bab0dabbc15b4b91e1902db5336de, type: 2}

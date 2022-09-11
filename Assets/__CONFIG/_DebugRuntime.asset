@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21ee3b72eceff894c9f79f3b7b6f3a39, type: 3}
+  m_Name: _DebugRuntime
+  m_EditorClassIdentifier: 
+  resources:
+    gold: 0
+    gems: 0
+    butterflies: 0
+  ownedCards:
+  - {fileID: 11400000, guid: 8fa8297387486c847ab140a7938ae018, type: 2}
+  - {fileID: 11400000, guid: d5e433677c598224f863d471eb4b0d26, type: 2}
+  - {fileID: 11400000, guid: 8f648819f9e704345872da0b4d18790f, type: 2}
+  - {fileID: 11400000, guid: 55419d3b58eda5c46a15f01846754b14, type: 2}
+  - {fileID: 11400000, guid: 2d8e64994f67d664fae62dd7bb898239, type: 2}
+  - {fileID: 11400000, guid: ffab568cc4720034c999d3991b546598, type: 2}
+  - {fileID: 11400000, guid: 868bef7dd971e654981ee342d9e83885, type: 2}
+  - {fileID: 11400000, guid: fe5d6877098d8334b93d7846653b0262, type: 2}
+  actions:
+    actions: 0
+    actionsLimit: 2
+  attemps:
+    attempts: 1
+    success: 1
+    fails: 0
+  points:
+    total: 0
+    pointsPerPair: 20
+    comboMultiplier: 1
+  combo:
+    successRow: 1
+    failRow: 0
+  winPoints:
+    points: 0
+    require: 3
+  rounds:
+    complete: 0
+    total: 3

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a363fb2ed82cd474192f609938a54af4, type: 3}
+  m_Name: Level 7
+  m_EditorClassIdentifier: 
+  mode: 0
+  difficulty: 1
+  lvlName: Henhouse
+  icon: {fileID: 21300000, guid: df28b478b4646834ab5e4d7c92d518c9, type: 3}
+  decks:
+  - {fileID: 11400000, guid: 51b5c1e189ed64144b008ead2216465a, type: 2}
+  - {fileID: 11400000, guid: d82b1ff9f1f34d64ebb26d52cce41e16, type: 2}
+  - {fileID: 11400000, guid: 683a86bd705060d4084b8ffc4b035772, type: 2}
+  - {fileID: 11400000, guid: cebf4cc43221ff7459515cfef50ae914, type: 2}
+  - {fileID: 11400000, guid: 23908e3a34719f24cb702732c63d58e9, type: 2}
+  - {fileID: 11400000, guid: 2f54343eef2f1c94e9d3a596291b5f3e, type: 2}
+  autoSetScene: 1
+  sceneToLoad: Level 7

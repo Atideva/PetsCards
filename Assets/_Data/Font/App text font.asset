@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98f5a53667c4d34891a04851ad82abe, type: 3}
+  m_Name: App text font
+  m_EditorClassIdentifier: 
+  appTextFont: {fileID: 12800000, guid: 75ed61bcb06f3a648a28c0195e305bb0, type: 3}
+  appTextFontTMP: {fileID: 11400000, guid: ece94d6c69a107748a80a4af307787b8, type: 2}

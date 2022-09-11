@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Items
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 84346a8818ffa7e4b943dc89d25aa956, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 136247715ea8e1b49b1337874f6e8bbd, type: 3}
+  - {fileID: 21300000, guid: 5e6b2ee2a8f732d46b977dc0ba15b6c9, type: 3}
+  - {fileID: 21300000, guid: b042084314795bd46972878490aa717e, type: 3}
+  - {fileID: 21300000, guid: 37a34174cc5415944bbe03503a2cda1d, type: 3}
+  - {fileID: 21300000, guid: d83a643582c8ded4bb15a35a43120cda, type: 3}
+  - {fileID: 21300000, guid: 7a29425521f12bd47a7e214a1c520e93, type: 3}
+  - {fileID: 21300000, guid: e998d0f55ae5c9446a4fae2476d0b3c5, type: 3}
+  - {fileID: 21300000, guid: f25db11692c07054d99063f8521d759f, type: 3}
+  - {fileID: 21300000, guid: 231b744652723aa4a95cce94e6f6e9ee, type: 3}
+  - {fileID: 21300000, guid: e4268d56670772143a2d9ffea2abc4b6, type: 3}
+  - {fileID: 21300000, guid: 6c7a81b6dc01ab5418b8c7b344ba100b, type: 3}
+  - {fileID: 21300000, guid: 45f6fd178a775324f81a9231880c3ef2, type: 3}
+  - {fileID: 21300000, guid: 09d09847e755adc4991581fa1797c254, type: 3}
+  - {fileID: 21300000, guid: 484361972f301364fb84a1a0cb4756c3, type: 3}
+  - {fileID: 21300000, guid: b258f108425cbab4c906be78dbfbde60, type: 3}
+  - {fileID: 21300000, guid: 38f9aa286f5b34b49a193356646d2a64, type: 3}
+  - {fileID: 21300000, guid: 02b03e28bf7faf04a93f127633a3b6fd, type: 3}
+  - {fileID: 21300000, guid: df355e99315ba3b4f890c31d11eedcd2, type: 3}
+  - {fileID: 21300000, guid: d87c45e9de678564d882759c50e31d62, type: 3}
+  - {fileID: 21300000, guid: 9aeea52a991f5c6419127bbc46c4cf9b, type: 3}
+  - {fileID: 21300000, guid: 921887eb1610e4a408f524a707dc260b, type: 3}
+  - {fileID: 21300000, guid: 4e18d8add5a6ea843836c00994f0c551, type: 3}
+  - {fileID: 21300000, guid: f27ea66e036844e4483643a64d9f7fc0, type: 3}
+  - {fileID: 21300000, guid: a3ddc7ee0bf6f054b887c3c2cefe6a44, type: 3}
+  - {fileID: 21300000, guid: de5b4efe3e9d1c64f928fc2db0f91fbe, type: 3}
+  - {fileID: 21300000, guid: 4744df5fcc6767948b5f4b841febadde, type: 3}
+  - {fileID: 21300000, guid: d894b0ef93cfd574a930449de2b7b181, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - feather
+  - hay (!)
+  - horseshoeBlue3
+  - appleBite
+  - catFoodOpen3
+  - horseshoeBlue
+  - seed (!)
+  - horseshoeGreen 1
+  - horseshoe
+  - seed_leaf (!)
+  - horseshoe 1
+  - bell
+  - apple
+  - catFoodOpen4
+  - milk (!)
+  - bellRing
+  - horseshoeGreen
+  - horseshoeBlue2
+  - bone
+  - catFoodOpen45
+  - catFoodOpen2
+  - catFood
+  - seed_few (!)
+  - horseshoeRed
+  - horseshoeBlue4
+  - catFoodOpen65
+  - boneBreak
+  m_RenderDataMap: {}
+  m_Tag: Items
+  m_IsVariant: 0

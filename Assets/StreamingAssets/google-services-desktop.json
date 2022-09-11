@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "768731546725",
+    "project_id": "petcards-8967a",
+    "storage_bucket": "petcards-8967a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768731546725:android:26ace44d871e466403328c",
+        "android_client_info": {
+          "package_name": "com.symphonygames.PetCards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768731546725-esv950ers0dq5db3qpp9aoq1kgv2k0v2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMC-XN9Wqi2hkZ6GrXV6daLJ3GOQjwS7A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "768731546725-esv950ers0dq5db3qpp9aoq1kgv2k0v2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

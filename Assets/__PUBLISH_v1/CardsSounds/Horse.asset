@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf9da1fddd9e3449a6d4f9788278834, type: 3}
+  m_Name: Horse
+  m_EditorClassIdentifier: 
+  sounds:
+  - {fileID: 8300000, guid: 4d4cbe721c41e2f48abefd557eb74c66, type: 3}
+  - {fileID: 8300000, guid: 4d4cbe721c41e2f48abefd557eb74c66, type: 3}
+  - {fileID: 8300000, guid: 4d4cbe721c41e2f48abefd557eb74c66, type: 3}
+  - {fileID: 8300000, guid: 4d4cbe721c41e2f48abefd557eb74c66, type: 3}
+  - {fileID: 8300000, guid: 9c883eb4c64b63d439d9550b664a952a, type: 3}
+  volume:
+    minValue: 0.8821238
+    maxValue: 1
+  pitch:
+    minValue: 0.81062716
+    maxValue: 0.972545
+  maximumFrequency: 0

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a363fb2ed82cd474192f609938a54af4, type: 3}
+  m_Name: Level 11
+  m_EditorClassIdentifier: 
+  mode: 2
+  difficulty: 1.5
+  decks:
+  - {fileID: 11400000, guid: 04fd6e2208b6b0f4ba3c4fa37b22af20, type: 2}
+  - {fileID: 11400000, guid: 9a298d488982c634da36dd032021d33a, type: 2}
+  - {fileID: 11400000, guid: 206be057d24602f49b45960ac2e2821b, type: 2}
+  - {fileID: 11400000, guid: 1b5d180c8b6ecd943bdf8cb3636e5f93, type: 2}
+  - {fileID: 11400000, guid: 5f4e9da8dfb79ee488a07f5c1cc3dae1, type: 2}
+  uniqueCards: 0200000003000000040000000300000005000000
+  lvlName: Beware of the wolf
+  icon: {fileID: 21300000, guid: 2777138647495bd4b9bf4e50bfc2bace, type: 3}
+  autoSetScene: 1
+  sceneToLoad: Level 11

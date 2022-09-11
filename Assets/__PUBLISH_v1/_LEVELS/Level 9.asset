@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a363fb2ed82cd474192f609938a54af4, type: 3}
+  m_Name: Level 9
+  m_EditorClassIdentifier: 
+  mode: 2
+  difficulty: 1
+  decks:
+  - {fileID: 11400000, guid: 56cdfc53b464c284daebaa1b181fb9fd, type: 2}
+  - {fileID: 11400000, guid: 033c423cd7e2fa2488d991f2ede871e2, type: 2}
+  - {fileID: 11400000, guid: 808e965839af582438c8572c66da2b93, type: 2}
+  - {fileID: 11400000, guid: 7c52b27a530c1ee4ab8e0345b2ca84b5, type: 2}
+  - {fileID: 11400000, guid: 217fcb09bc984994cb16dae98c31e9db, type: 2}
+  - {fileID: 11400000, guid: 579797bdfc3029145849b3d6eef455a5, type: 2}
+  uniqueCards: 010000000200000002000000020000000300000004000000
+  lvlName: Hurry up
+  icon: {fileID: 21300000, guid: 339ee22c881cd84488ecddbdb9549211, type: 3}
+  autoSetScene: 1
+  sceneToLoad: Level 9

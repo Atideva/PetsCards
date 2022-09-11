@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5601fa027e5f90e4c80bfb6d09a5ff7d, type: 3}
+  m_Name: PubTest_2a
+  m_EditorClassIdentifier: 
+  deckType: 0
+  cardFrame: {fileID: 21300000, guid: c56b276dc10e9884caee436b07e0d0dc, type: 3}
+  cardBackImage: {fileID: 21300000, guid: 03c679646528a2b48930ca15aa16427a, type: 3}
+  rotateSound: {fileID: 0}
+  cards:
+  - {fileID: 11400000, guid: 8fa8297387486c847ab140a7938ae018, type: 2}
+  - {fileID: 11400000, guid: ffab568cc4720034c999d3991b546598, type: 2}

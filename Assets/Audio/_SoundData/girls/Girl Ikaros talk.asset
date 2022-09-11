@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf9da1fddd9e3449a6d4f9788278834, type: 3}
+  m_Name: Girl Ikaros talk
+  m_EditorClassIdentifier: 
+  sounds:
+  - {fileID: 8300000, guid: 0eda6883ae8a24443a46f360c4585d8f, type: 3}
+  volume:
+    minValue: 0.6603509
+    maxValue: 0.75859654
+  pitch:
+    minValue: 1.0479451
+    maxValue: 1.0479451
+  maximumFrequency: 0.1

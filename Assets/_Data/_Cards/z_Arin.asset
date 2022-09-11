@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ffcb63d18ae1ba47ab80121aff94445, type: 3}
+  m_Name: z_Arin
+  m_EditorClassIdentifier: 
+  cardPrefab: {fileID: 6623347746657070485, guid: 55be027a6949f0541b84d6443748dc9f, type: 3}
+  talkSound: {fileID: 11400000, guid: f95b7f581b0d3e2439c62e3838f50e09, type: 2}
+  shopPrice:
+    GoldCoins: 0
+    Gems: 0
+    Butterflies: 0
+  abilities: []

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ffcb63d18ae1ba47ab80121aff94445, type: 3}
+  m_Name: HorshoeGreen
+  m_EditorClassIdentifier: 
+  glowColor: {r: 0.30566037, g: 1, b: 0.3994901, a: 1}
+  cardPrefab: {fileID: 7102569227659458678, guid: c4cd6568bf2558f40b0cc0157de52607, type: 3}
+  talkSound: {fileID: 11400000, guid: f4842f026ed71174d8a17dfb1c6a0f18, type: 2}
+  shopPrice:
+    coins: 0
+    gems: 0
+  description: hay
+  abilities: []
