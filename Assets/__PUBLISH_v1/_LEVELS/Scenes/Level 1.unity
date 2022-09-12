@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!21 &111790537
+--- !u!21 &60208751
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -207,7 +207,7 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
---- !u!21 &906501593
+--- !u!21 &348770977
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -745,6 +745,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8450248725741913040, guid: 8bd11f1bd470c914e95a96bf5a755c4e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: d52b33002e2582746994f17c3fdefd31, type: 2}
     - target: {fileID: 8797638308700663436, guid: 8bd11f1bd470c914e95a96bf5a755c4e, type: 3}
       propertyPath: m_Name
       value: Systems
