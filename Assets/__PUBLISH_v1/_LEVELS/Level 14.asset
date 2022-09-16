@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Level 14
   m_EditorClassIdentifier: 
   mode: 1
-  difficulty: 1
+  cards: 0
+  difficulty: 0.8
   decks:
   - {fileID: 11400000, guid: b6c3ea1688bea8644a0ba26e02171f51, type: 2}
   - {fileID: 11400000, guid: d28a85252fb996943a35e89c031dee83, type: 2}
@@ -21,7 +22,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7b8894b202bf8cc47ae0f6a282def2a8, type: 2}
   - {fileID: 11400000, guid: 0ac862664a988114db40909343ace060, type: 2}
   - {fileID: 11400000, guid: ac669571894a52e49ab4273a6c1be3f8, type: 2}
-  uniqueCards: 010000000200000003000000040000000400000006000000
+  uniqueCards: 010000000200000003000000030000000200000003000000
   lvlName: mr. onion
   icon: {fileID: 21300000, guid: b3a5dfbffe724a54c92c5c8f2dea0be9, type: 3}
   autoSetScene: 1

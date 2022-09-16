@@ -18,5 +18,5 @@ MonoBehaviour:
   rotateSound: {fileID: 0}
   uniqueCardsDebug: 2
   cards:
-  - {fileID: 11400000, guid: fb67461528483cd4eadc3a4c18d32027, type: 2}
+  - {fileID: 11400000, guid: 519723d306737bb4a9208d38a21b7035, type: 2}
   - {fileID: 11400000, guid: 87a5d8738ec33ed46935080680af189a, type: 2}

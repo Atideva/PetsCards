@@ -126,9 +126,7 @@ namespace game.cards.layout
         #endregion
 
         void Start()
-        {
-            topCornerObject.gameObject.SetActive(false);
-        }
+            => topCornerObject.gameObject.SetActive(false);
 
         public void LayoutCards(List<Card> playingCards)
             => TableLayout(playingCards);
@@ -182,8 +180,26 @@ namespace game.cards.layout
                 rowSpaces = columns - 1;
                 columnSpaces = rows - 1;
 
+
+                cardSizeX = layoutWidth / (columns + rowSpaces * autoSizeCardsPaddingX);
+                var requireY = cardSizeX * (cardRealSizeY / cardRealSizeX);
                 cardSizeY = layoutHeight / (rows + columnSpaces * autoSizeCardsPaddingY);
-                cardSizeX = cardSizeY / (cardRealSizeY / cardRealSizeX);
+                var requireX = cardSizeY / (cardRealSizeY / cardRealSizeX);
+
+                if (requireY < cardSizeY)
+                {
+                    cardSizeY = requireY;
+                    cardSizeX = cardSizeY / (cardRealSizeY / cardRealSizeX);
+                }
+                else if (requireX < cardSizeX)
+                {
+                    cardSizeX = requireX;
+                    cardSizeY = cardSizeX * (cardRealSizeY / cardRealSizeX);
+                }
+                //    var layoutHeight = y *rows+ columnSpaces*autoSizeCardsPaddingY*y
+                //    var layoutHeight = y * (rows+columnSpaces*autoSizeCardsPaddingY)
+
+
                 // cardSizeX = tableSizeX / (columns + paddingsInRowCount * autoSizeCardsPaddingX);
 
                 //TODO: its layout for 2x4 cards
@@ -397,5 +413,15 @@ namespace game.cards.layout
                     (item.transform.localEulerAngles.x, yRot, item.transform.localEulerAngles.z);
             }
         }
+
+#if UNITY_EDITOR
+        void OnDrawGizmos()
+        {
+            var size = new Vector3(layoutWidth * 0.98f, layoutHeight * 0.98f, 0);
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireCube(tableCenter, size);
+        }
+
+#endif
     }
 }

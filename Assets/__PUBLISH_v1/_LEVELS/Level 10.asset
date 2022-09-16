@@ -13,15 +13,16 @@ MonoBehaviour:
   m_Name: Level 10
   m_EditorClassIdentifier: 
   mode: 2
-  difficulty: 2
-  lvlName: Feed Time
-  icon: {fileID: 21300000, guid: 5e6b2ee2a8f732d46b977dc0ba15b6c9, type: 3}
+  cards: 0
+  difficulty: 1
   decks:
   - {fileID: 11400000, guid: 7e447099d61657748a4209ac4e002d3b, type: 2}
   - {fileID: 11400000, guid: 3ded3425d896f3947a671237971412a7, type: 2}
   - {fileID: 11400000, guid: dfed9fa52fe721e45bced7c7713b222c, type: 2}
   - {fileID: 11400000, guid: 53ec8295750bb3146951cfd83cb29f78, type: 2}
   - {fileID: 11400000, guid: 4adb42841ded6ad408658eea434e55fb, type: 2}
-  uniqueCards: 0200000003000000040000000400000004000000
+  uniqueCards: 0200000003000000040000000300000002000000
+  lvlName: Feed Time
+  icon: {fileID: 21300000, guid: 5e6b2ee2a8f732d46b977dc0ba15b6c9, type: 3}
   autoSetScene: 1
   sceneToLoad: Level 10

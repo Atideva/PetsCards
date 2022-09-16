@@ -16,13 +16,13 @@ MonoBehaviour:
   cardFrame: {fileID: 21300000, guid: 39129b3ccbd7868489042d2e58f75346, type: 3}
   cardBackImage: {fileID: 21300000, guid: 89a95f7ee7e405e45b57200a85326d4c, type: 3}
   rotateSound: {fileID: 0}
-  uniqueCardsDebug: 6
+  uniqueCardsDebug: 3
   cards:
   - {fileID: 11400000, guid: 62c56c4d48bddbc47b105e4fa913ae18, type: 2}
-  - {fileID: 11400000, guid: 53f7d457f46ebe44eb7b4cac7fae075a, type: 2}
-  - {fileID: 11400000, guid: 53f7d457f46ebe44eb7b4cac7fae075a, type: 2}
-  - {fileID: 11400000, guid: 291d5984ede8a3642a51abfb5299241b, type: 2}
+  - {fileID: 11400000, guid: 62c56c4d48bddbc47b105e4fa913ae18, type: 2}
+  - {fileID: 11400000, guid: 62c56c4d48bddbc47b105e4fa913ae18, type: 2}
   - {fileID: 11400000, guid: e8764a7846185554aa038e1d29835579, type: 2}
-  - {fileID: 11400000, guid: f63ae8df758f10940b7c4a9659b72f4d, type: 2}
-  - {fileID: 11400000, guid: 46f4ac17203af274b877e13d70542f39, type: 2}
-  - {fileID: 11400000, guid: 46f4ac17203af274b877e13d70542f39, type: 2}
+  - {fileID: 11400000, guid: e8764a7846185554aa038e1d29835579, type: 2}
+  - {fileID: 11400000, guid: 291d5984ede8a3642a51abfb5299241b, type: 2}
+  - {fileID: 11400000, guid: 291d5984ede8a3642a51abfb5299241b, type: 2}
+  - {fileID: 11400000, guid: 291d5984ede8a3642a51abfb5299241b, type: 2}

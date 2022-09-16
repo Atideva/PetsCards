@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Level 18
   m_EditorClassIdentifier: 
   mode: 2
-  difficulty: 1
+  cards: 0
+  difficulty: 0.9
   decks:
   - {fileID: 11400000, guid: a8f6670454bfeb14fbbfab7a52129b10, type: 2}
-  uniqueCards: 08000000
+  uniqueCards: 07000000
   lvlName: Time Challenge
-  icon: {fileID: 21300000, guid: 8910ed967da90d5448b0480765c0fff4, type: 3}
+  icon: {fileID: 21300000, guid: 1be8f820e54aec848bdd255a3a08d880, type: 3}
   autoSetScene: 1
   sceneToLoad: Level 18

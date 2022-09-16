@@ -8492,7 +8492,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 29, y: -125}
+  m_AnchoredPosition: {x: -6.6, y: -135.3}
   m_SizeDelta: {x: 80, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7820439676138515886
@@ -14980,8 +14980,8 @@ MonoBehaviour:
   autoOffset: 0
   xOffset: 0
   yOffset: 0
-  width: 2.6999996
-  height: 5.9999995
+  width: 2.8421054
+  height: 6
 --- !u!114 &8262384636171589541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16510,8 +16510,8 @@ MonoBehaviour:
   autoOffset: 0
   xOffset: 0
   yOffset: -1
-  width: 2.6999996
-  height: 6
+  width: 2.8421054
+  height: 6.0000005
 --- !u!114 &4978615645122226314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19177,8 +19177,8 @@ MonoBehaviour:
   autoOffset: 0
   xOffset: 0
   yOffset: 0
-  width: 2.1599998
-  height: 2.9999998
+  width: 2.2736843
+  height: 3.1578948
 --- !u!1 &4083607070986694890
 GameObject:
   m_ObjectHideFlags: 0
@@ -23626,8 +23626,8 @@ MonoBehaviour:
   autoOffset: 0
   xOffset: 0
   yOffset: -1
-  width: 2.6999996
-  height: 6
+  width: 2.8421054
+  height: 6.0000005
 --- !u!114 &27252515014260633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23713,8 +23713,8 @@ MonoBehaviour:
   autoOffset: 0
   xOffset: 0
   yOffset: -1
-  width: 2.6999996
-  height: 6
+  width: 2.8421054
+  height: 6.0000005
 --- !u!114 &8562676214055843049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24960,10 +24960,10 @@ RectTransform:
   m_Father: {fileID: 106004801230675385}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.6, y: 2.2}
-  m_SizeDelta: {x: 65, y: 65}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &611280833617969337
 CanvasRenderer:
@@ -30369,8 +30369,8 @@ MonoBehaviour:
   autoOffset: 0
   xOffset: 0
   yOffset: 0
-  width: 2.1599998
-  height: 2.9999998
+  width: 2.2736843
+  height: 3.1578948
 --- !u!1 &8115214403655774663
 GameObject:
   m_ObjectHideFlags: 0
@@ -30836,7 +30836,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8231336265491088809}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -4.48e-43}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -30844,10 +30844,10 @@ RectTransform:
   m_Father: {fileID: 528380003270174228}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -34.199997, y: -124.599976}
-  m_SizeDelta: {x: 65, y: 65}
+  m_AnchorMin: {x: 0.1, y: 0.1}
+  m_AnchorMax: {x: 0.9, y: 0.9}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3992393172136415591
 CanvasRenderer:
@@ -32443,6 +32443,7 @@ MonoBehaviour:
   turnCardsBackAtStart: 1
   cardRealSizeX: 1.13
   cardRealSizeY: 1.6
+  spawnDelay: 0.5
   autoSizeCards: 1
   maxCardSizeY: 2.8
   autoSizePaddingTop: 0
@@ -32479,7 +32480,6 @@ MonoBehaviour:
   centerX: 0
   rowSpaces: 0
   columnSpaces: 0
-  spawnDelay: 0.5
 --- !u!1 &8649575161910255555
 GameObject:
   m_ObjectHideFlags: 0
@@ -41825,8 +41825,8 @@ MonoBehaviour:
   autoOffset: 0
   xOffset: 0
   yOffset: 0
-  width: 1440
-  height: 3200
+  width: 1080
+  height: 2280
 --- !u!1 &9084510280050895396
 GameObject:
   m_ObjectHideFlags: 0

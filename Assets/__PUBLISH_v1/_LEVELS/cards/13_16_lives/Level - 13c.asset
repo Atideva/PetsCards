@@ -16,9 +16,8 @@ MonoBehaviour:
   cardFrame: {fileID: 21300000, guid: 39129b3ccbd7868489042d2e58f75346, type: 3}
   cardBackImage: {fileID: 21300000, guid: 89a95f7ee7e405e45b57200a85326d4c, type: 3}
   rotateSound: {fileID: 0}
-  uniqueCardsDebug: 4
+  uniqueCardsDebug: 3
   cards:
   - {fileID: 11400000, guid: fb67461528483cd4eadc3a4c18d32027, type: 2}
-  - {fileID: 11400000, guid: 53f7d457f46ebe44eb7b4cac7fae075a, type: 2}
   - {fileID: 11400000, guid: 78e0b87bda80a7b4a9bca395bbe789ea, type: 2}
-  - {fileID: 11400000, guid: 291d5984ede8a3642a51abfb5299241b, type: 2}
+  - {fileID: 11400000, guid: 65d287ef65b91d2449dbb7a9c1c2fe03, type: 2}

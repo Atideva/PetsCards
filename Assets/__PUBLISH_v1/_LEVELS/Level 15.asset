@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Level 15
   m_EditorClassIdentifier: 
   mode: 1
-  difficulty: 1
+  cards: 0
+  difficulty: 0.9
   decks:
   - {fileID: 11400000, guid: ddb3843dbc56a3141bc685621d8130ff, type: 2}
   - {fileID: 11400000, guid: 490128aeed237e647893c311a7cc864b, type: 2}
@@ -22,7 +23,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5778fc3425c27504ebf12af5e6a47441, type: 2}
   - {fileID: 11400000, guid: b5914ce11b93765469c0146b27afb763, type: 2}
   - {fileID: 11400000, guid: 47466336d41c2bd469850ae62429ff33, type: 2}
-  uniqueCards: 01000000020000000300000004000000010000000400000004000000
+  uniqueCards: 01000000020000000300000003000000010000000300000002000000
   lvlName: sheep bell
   icon: {fileID: 21300000, guid: 38f9aa286f5b34b49a193356646d2a64, type: 3}
   autoSetScene: 1

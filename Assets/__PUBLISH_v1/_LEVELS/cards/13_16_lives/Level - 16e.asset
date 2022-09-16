@@ -16,11 +16,11 @@ MonoBehaviour:
   cardFrame: {fileID: 21300000, guid: 39129b3ccbd7868489042d2e58f75346, type: 3}
   cardBackImage: {fileID: 21300000, guid: 89a95f7ee7e405e45b57200a85326d4c, type: 3}
   rotateSound: {fileID: 0}
-  uniqueCardsDebug: 6
+  uniqueCardsDebug: 2
   cards:
-  - {fileID: 11400000, guid: b8eeb0061f3ab6a419b0c6ed953af44a, type: 2}
+  - {fileID: 11400000, guid: 6a5a018c29bef864993799451064931b, type: 2}
+  - {fileID: 11400000, guid: 6a5a018c29bef864993799451064931b, type: 2}
+  - {fileID: 11400000, guid: d51010fd90097424eabb3dae2f8cb49e, type: 2}
+  - {fileID: 11400000, guid: d51010fd90097424eabb3dae2f8cb49e, type: 2}
   - {fileID: 11400000, guid: d51010fd90097424eabb3dae2f8cb49e, type: 2}
   - {fileID: 11400000, guid: 6a5a018c29bef864993799451064931b, type: 2}
-  - {fileID: 11400000, guid: 04f525123f54ba3409867ca6a1038b02, type: 2}
-  - {fileID: 11400000, guid: 62c56c4d48bddbc47b105e4fa913ae18, type: 2}
-  - {fileID: 11400000, guid: f63ae8df758f10940b7c4a9659b72f4d, type: 2}
