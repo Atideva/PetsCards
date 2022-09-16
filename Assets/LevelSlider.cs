@@ -214,11 +214,13 @@ public class LevelSlider : MonoBehaviour
         float showDelay = 0;
         foreach (var cd in cards)
         {
-            var isDanger = cd.Abilities.Any(a => a.config.Prefab.AbilityPrefab is AbilityClose);
+          //  var isDanger = cd.Abilities.Any(a => a.config.Prefab.AbilityPrefab is AbilityClose);
+            var isEvil = cd.Abilities.Any(a => a.config.Type == AbilityType.Evil);
+            var isGood = cd.Abilities.Any(a => a.config.Type == AbilityType.Good);
             var delay = showDelay;
             cadPointPool.Get()
                 .With(c => c.transform.SetParent(cadPointContainer))
-                .With(c => c.Init(cd, isDanger))
+                .With(c => c.Init(cd, isEvil, isGood))
                 .With(c => c.Show(delay))
                 .With(c => cardList.Add(c))
                 .With(c => c.transform.localScale = Vector3.one)

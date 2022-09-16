@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffcb63d18ae1ba47ab80121aff94445, type: 3}
   m_Name: Dog coyote
   m_EditorClassIdentifier: 
-  glowColor: {r: 0.87843144, g: 0.49803925, b: 0, a: 1}
+  glowColor: {r: 1, g: 0.52572066, b: 0, a: 1}
   cardPrefab: {fileID: 7102569227659458678, guid: 23b0ce6e1916ec64d9e3f1b881dde02b, type: 3}
   talkSound: {fileID: 11400000, guid: b1a4e641d84063c409e2d95623f86646, type: 2}
+  firstCraft: {fileID: 0}
+  secondCraft: {fileID: 0}
+  resultCraft: {fileID: 0}
   shopPrice:
     coins: 0
     gems: 0

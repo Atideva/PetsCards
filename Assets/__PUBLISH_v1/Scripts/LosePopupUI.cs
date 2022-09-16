@@ -19,7 +19,8 @@ namespace __PUBLISH_v1.Scripts
         [SerializeField] CanvasGroup joke;
         [SerializeField] CanvasGroup retry;
         [SerializeField] CanvasGroup menu;
-
+        [SerializeField] DOTweenAnimation catAnim;
+        [SerializeField] DOTweenAnimation topAnim;
 
         void Awake()
         {
@@ -32,6 +33,8 @@ namespace __PUBLISH_v1.Scripts
             DisableGroup(joke);
             DisableGroup(retry);
             DisableGroup(menu);  
+            catAnim.DOPause();
+            topAnim.DOPause();
         }
         public void Show()
         {
@@ -43,6 +46,8 @@ namespace __PUBLISH_v1.Scripts
             joke.DOFade(1, fadeTime).SetDelay(delay + delaySmall);
             menu.DOFade(1, fadeTime).SetDelay(delay + delaySmall * 2);
             retry.DOFade(1, fadeTime).SetDelay(delay + delaySmall * 3);
+            catAnim.DOPlay();
+            topAnim.DOPlay();
         }
 
         void EnableGroup(CanvasGroup group)

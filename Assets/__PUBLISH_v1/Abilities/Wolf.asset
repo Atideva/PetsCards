@@ -15,5 +15,5 @@ MonoBehaviour:
   type: 1
   prefab: {fileID: 8579541706537898159, guid: 5548f515f5fbdbd4b95d78a768eef200, type: 3}
   abilityName: WOLF
-  description: scares all cards
+  description: close all cards
   sound: {fileID: 11400000, guid: 4a7c6666dd23ee440aa0cc52227601f7, type: 2}

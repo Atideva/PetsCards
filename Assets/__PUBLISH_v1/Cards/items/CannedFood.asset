@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffcb63d18ae1ba47ab80121aff94445, type: 3}
   m_Name: CannedFood
   m_EditorClassIdentifier: 
-  glowColor: {r: 0.23137257, g: 0.6, b: 0.98823535, a: 1}
+  glowColor: {r: 1, g: 0, b: 0.009780884, a: 1}
   cardPrefab: {fileID: 7102569227659458678, guid: 401c909f8a8a3554c9e0b327bc9d96fa, type: 3}
   talkSound: {fileID: 11400000, guid: 44a1b867aa8bc974a87444729df28526, type: 2}
+  firstCraft: {fileID: 0}
+  secondCraft: {fileID: 0}
+  resultCraft: {fileID: 0}
   shopPrice:
     coins: 0
     gems: 0

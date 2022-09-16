@@ -1,3 +1,4 @@
+using System;
 using DG.Tweening;
 using game.managers;
 using TMPro;
@@ -17,15 +18,17 @@ namespace game.sessions.timer
         [Header("Animation")]
         public float pumpSize;
         public float pumpTime;
-
+       
+        int _lastUpdateSec;
         float _secondsMax;
+        
         void Awake() => DisableUI();
 
         void Start()
         {
             Events.Instance.OnTimerEnable += EnableUI;
             Events.Instance.OnTimerDisable += DisableUI;
-            Events.Instance.OnTimerUpdate += Update;
+            Events.Instance.OnTimerUpdate += OnUpdate;
             Events.Instance.OnTimerContinue += OnTimerContinue;
             Events.Instance.OnSetTimer += OnSetTimer;
             if (!useValuesText) txt.gameObject.SetActive(false);
@@ -41,10 +44,30 @@ namespace game.sessions.timer
                     => txt.transform.DOScale(1, pumpTime / 2));
         }
 
-        void Update()
+
+
+        void FixedUpdate()
         {
+            if (useValuesText)
+            {
+                var remain = Mathf.RoundToInt(Timer.Instance.Seconds);
+                if (_lastUpdateSec != remain)
+                {
+                    _lastUpdateSec = remain;
+                    RefreshText(remain);
+                }
+            }
+
             if (!useSlider) return;
             if (Timer.Instance.Seconds != 0) RefreshSlider(Timer.Instance.Seconds);
+        }
+
+        void OnUpdate(int remain)
+        {
+            //  Debug.LogError("TIMER");
+            if (remain > _secondsMax) _secondsMax = remain;
+            if (useValuesText) RefreshText(remain);
+            //if (useSlider) RefreshSlider(secondsRemainng);
         }
 
         void EnableUI()
@@ -58,12 +81,6 @@ namespace game.sessions.timer
 
         void DisableUI() => slider.gameObject.SetActive(false);
 
-        void Update(int secondsRemainng)
-        {
-            if (secondsRemainng > _secondsMax) _secondsMax = secondsRemainng;
-            if (useValuesText) RefreshText(secondsRemainng);
-            //if (useSlider) RefreshSlider(secondsRemainng);
-        }
 
         void RefreshText(int seconds) => txt.text = seconds.ToString();
         //  void RefreshText(int seconds) => txt.text = Format0000(seconds); 

@@ -132,6 +132,7 @@ MonoBehaviour:
   icon: {fileID: 7535931201466068217}
   backSprite: {fileID: 21300000, guid: 2f08dbffde5225d4494ade4cd173c647, type: 3}
   backDangerSprite: {fileID: 21300000, guid: d9f1dd41f64ec174da85f28f823d5a91, type: 3}
+  backGoodSprite: {fileID: 21300000, guid: e477d2bb5bcefdc4e99df790a8a3a1f1, type: 3}
   grayBackMaterial: {fileID: 2100000, guid: fc0c1a0b307a4d44bac4b2724cb8ed6d, type: 2}
   grayPetMaterial: {fileID: 2100000, guid: 591dc400ca2d5794a9cf7e64bf26b2bd, type: 2}
   dangerPetMaterial: {fileID: 2100000, guid: c678e8279be10534b9283b5c0809f3c0, type: 2}

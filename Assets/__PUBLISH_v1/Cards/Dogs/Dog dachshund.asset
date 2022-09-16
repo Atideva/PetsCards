@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffcb63d18ae1ba47ab80121aff94445, type: 3}
   m_Name: Dog dachshund
   m_EditorClassIdentifier: 
-  glowColor: {r: 0.9339623, g: 0.64545065, b: 0.38239586, a: 1}
+  glowColor: {r: 0, g: 0.39176846, b: 1, a: 1}
   cardPrefab: {fileID: 7102569227659458678, guid: 48272331d57af3a48bad3b4fb7ada46e, type: 3}
   talkSound: {fileID: 11400000, guid: cefa813aa6c220544a58aa29ddf69938, type: 2}
   firstCraft: {fileID: 21300000, guid: 92b85450d352cde4289afe28b4b84c9b, type: 3}

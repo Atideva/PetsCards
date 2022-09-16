@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffcb63d18ae1ba47ab80121aff94445, type: 3}
   m_Name: SeedParty
   m_EditorClassIdentifier: 
-  glowColor: {r: 1, g: 0.5529412, b: 0, a: 1}
+  glowColor: {r: 0, g: 0.74767303, b: 1, a: 1}
   cardPrefab: {fileID: 7102569227659458678, guid: 128c2edef1d30854bba7bee4712f717d, type: 3}
   talkSound: {fileID: 11400000, guid: 8dc8fe8d614e4f24abe8e81608740979, type: 2}
+  firstCraft: {fileID: 0}
+  secondCraft: {fileID: 0}
+  resultCraft: {fileID: 0}
   shopPrice:
     coins: 0
     gems: 0

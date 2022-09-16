@@ -12,27 +12,27 @@ namespace game.sessions.timer
         bool _way;
         void Start()
         {
-            Events.Instance.OnTimerState += State;
-            Events.Instance.OnTimerPause += Pause;
+            Events.Instance.OnTimerState += OnState;
+            Events.Instance.OnTimerPause += Stop;
+            Events.Instance.OnTimeOver += Stop;
         }
         float _size = 1f;
-        void Pause() => StopShake();
-        void State(TimerState state)
+ 
+        void OnState(TimerState state)
         {
-            if (state == TimerState.Low)
+            switch (state)
             {
-
-            }
-            if (state == TimerState.Critical)
-            {
-                StartCoroutine(ShakeTransform());
-            }
-            if (state == TimerState.Normal)
-            {
-                StopShake();
+                case TimerState.Low:
+                    break;
+                case TimerState.Critical:
+                    StartCoroutine(ShakeTransform());
+                    break;
+                case TimerState.Normal:
+                    Stop();
+                    break;
             }
         }
-        void StopShake()
+        void Stop()
         {
             StopAllCoroutines();
             _size = 1;

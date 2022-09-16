@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using __PUBLISH_v1.Scripts;
 using DG.Tweening;
 using game.cards;
@@ -6,15 +7,17 @@ using RengeGames.HealthBars;
 using TMPro;
 using UI;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace game.entertainment
 {
     public class BonusCoins : MonoBehaviour
     {
+        public bool useRadial;
         public UltimateCircularHealthBar circularBar;
         public CustomSlider slider;
         public CanvasGroup canvasGroup;
-
+        public List<Image> coinsImages = new();
         [SerializeField] int minimumRow = 2;
         [SerializeField] TextMeshProUGUI txt;
         public int maxSegments;
@@ -29,23 +32,38 @@ namespace game.entertainment
         {
             canvasGroup.alpha = 0;
             slider.SetValue(0);
-            circularBar.SetSegmentCount(maxSegments);
-            circularBar.SetRemovedSegments(maxSegments);
+            if (useRadial)
+            {
+                circularBar.SetSegmentCount(maxSegments);
+                circularBar.SetRemovedSegments(maxSegments);
+            }
+
             Events.Instance.OnComboSuccess += OnComboSuccess;
             Events.Instance.OnComboBreak += OnComboBreak;
+            DisableAll();
+        }
+
+        void DisableAll()
+        {
+            foreach (var coinsImage in coinsImages)
+            {
+                coinsImage.enabled = false;
+            }
         }
 
         void OnComboBreak(int obj)
         {
             txt.text = "+0";
-            circularBar.SetRemovedSegments(maxSegments);
+            if (useRadial) circularBar.SetRemovedSegments(maxSegments);
             slider.SetValue(0);
-    
+
             _isVisible = false;
             canvasGroup.DOFade(0, fadeTime)
                 .SetDelay(hideDelay);
             canvasGroup.transform.DOScale(0, pumpTime)
                 .SetDelay(hideDelay);
+
+            DisableAll();
         }
 
 
@@ -66,16 +84,22 @@ namespace game.entertainment
                     .OnComplete(()
                         => canvasGroup.transform.DOScale(1, pumpTime / 2));
             }
-            
-            var segments = maxSegments - comboRowCount;
-            segments = Mathf.Clamp(segments, 0, maxSegments);
-            circularBar.SetRemovedSegments(segments);
-           
+
+            if (useRadial)
+            {
+                var segments = maxSegments - comboRowCount;
+                segments = Mathf.Clamp(segments, 0, maxSegments);
+                circularBar.SetRemovedSegments(segments);
+            }
+
             var fill = (float) comboRowCount / maxSegments;
             slider.SetValue(fill);
-            
+
             var bonusCoin = (int) (comboRowCount * GameManager.Instance.Config.Settings.ComboBonusPerRow);
             txt.text = "+" + bonusCoin;
+
+            for (int i = 0; i < coinsImages.Count; i++)
+                coinsImages[i].enabled = i < bonusCoin;
         }
     }
 }

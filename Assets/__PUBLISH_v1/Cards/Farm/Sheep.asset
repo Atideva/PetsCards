@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffcb63d18ae1ba47ab80121aff94445, type: 3}
   m_Name: Sheep
   m_EditorClassIdentifier: 
-  glowColor: {r: 0.9433962, g: 0.77583945, b: 0.31505868, a: 1}
+  glowColor: {r: 0.33386064, g: 1, b: 0, a: 1}
   cardPrefab: {fileID: 7102569227659458678, guid: dbd26197874b81d43ae715c77905dd49, type: 3}
   talkSound: {fileID: 11400000, guid: 6ec84d17c411f8544b82915212666713, type: 2}
+  firstCraft: {fileID: 0}
+  secondCraft: {fileID: 0}
+  resultCraft: {fileID: 0}
   shopPrice:
     coins: 0
     gems: 0

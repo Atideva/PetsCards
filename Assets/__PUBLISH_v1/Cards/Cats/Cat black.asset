@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffcb63d18ae1ba47ab80121aff94445, type: 3}
   m_Name: Cat black
   m_EditorClassIdentifier: 
-  glowColor: {r: 0.5415094, g: 0.6210358, b: 1, a: 1}
+  glowColor: {r: 0, g: 0.16771512, b: 0.9811321, a: 1}
   cardPrefab: {fileID: 7102569227659458678, guid: 73c21e9e04908534085009d466ea3597, type: 3}
   talkSound: {fileID: 11400000, guid: e23196af066845b459fde4dd4fd2618a, type: 2}
   firstCraft: {fileID: 21300000, guid: 547536759977ecc4483701e71450b99c, type: 3}

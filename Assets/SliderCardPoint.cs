@@ -12,6 +12,7 @@ public class SliderCardPoint : PoolObject
     [Header("Materials")]
     [SerializeField] Sprite backSprite;
     [SerializeField] Sprite backDangerSprite;
+    [SerializeField] Sprite backGoodSprite;
     [SerializeField] Material grayBackMaterial;
     [SerializeField] Material grayPetMaterial;
     [SerializeField] Material dangerPetMaterial;
@@ -27,14 +28,15 @@ public class SliderCardPoint : PoolObject
 
     public float PumpTime => pumpTime;
 
-    public void Init(CardData cd, bool isDanger)
+    public void Init(CardData cd, bool isDanger,bool isGood)
     {
         _cd = cd;
         icon.sprite = GameManager.Instance.IsCraft
             ? cd.ResultCraft
             : cd.CardPrefab.MainArt.sprite;
         back.sprite = isDanger ? backDangerSprite : backSprite;
-        Passive(isDanger);
+       if(!isDanger) back.sprite = isGood ? backGoodSprite : backSprite;
+        Passive(isDanger, isGood);
     }
 
     public float showSize = 1.3f;
@@ -62,11 +64,11 @@ public class SliderCardPoint : PoolObject
             .OnComplete(() => transform.DOScale(completeSize, pumpTime / 2));
     }
 
-    public void Passive(bool isDanger)
+    public void Passive(bool isDanger,bool isGood)
     {
         IsComplete = false;
         icon.material = grayPetMaterial;
-        back.material = isDanger ? null : grayBackMaterial;
+        back.material = isDanger || isGood ? null : grayBackMaterial;
     }
 
     void OnDisable() => ReturnToPool();

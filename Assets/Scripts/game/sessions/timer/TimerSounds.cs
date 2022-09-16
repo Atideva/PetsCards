@@ -1,3 +1,4 @@
+using Analytics;
 using game.managers;
 using UnityEngine;
 
@@ -5,54 +6,53 @@ namespace game.sessions.timer
 {
     public class TimerSounds : MonoBehaviour
     {
-
         public GameObject timeLowSound;
         public GameObject timeCriticalSound;
 
-        void Awake() => StopAllSounds();
+        void Awake() => Mute();
 
 
         void Start()
         {
-            Events.Instance.OnTimerState += State;
-            Events.Instance.OnTimerPause += Pause;
+            Events.Instance.OnTimerState += OnState;
+            Events.Instance.OnTimerPause += Mute;
+            Events.Instance.OnLose += Mute;
+            Events.Instance.OnTimeOver += Mute;
         }
 
-
-        void Pause() => StopAllSounds();
-        void State(TimerState state)
+        void OnState(TimerState state)
         {
-            if (state == TimerState.Low)
+            switch (state)
             {
-                SoundLowTime();
-            }
-            if (state == TimerState.Critical)
-            {
-                SoundCriticalTime();
-            }
-            if (state == TimerState.Normal)
-            {
-                StopAllSounds();
+                case TimerState.Low:
+                    Low();
+                    break;
+                case TimerState.Critical:
+                    Critical();
+                    break;
+                case TimerState.Normal:
+                    Mute();
+                    break;
             }
         }
 
 
-
-        void StopAllSounds()
+        void Mute()
         {
             timeLowSound.SetActive(false);
             timeCriticalSound.SetActive(false);
         }
-        void SoundLowTime()
+
+        void Low()
         {
             timeLowSound.SetActive(true);
             timeCriticalSound.SetActive(false);
         }
-        void SoundCriticalTime()
+
+        void Critical()
         {
             timeLowSound.SetActive(false);
             timeCriticalSound.SetActive(true);
         }
-
     }
 }

@@ -21,14 +21,14 @@ public class LineDraw : MonoBehaviour
     public bool drawAtSuccess;
     public bool drawAtFail;
     public bool animateAtSuccess;
- 
+
 
     void Start()
     {
         linePool.Init(linePrefab, poolPrewarm);
         //    Events.Instance.OnFlipEnd += OnFlipEnd;
         Events.Instance.OnPairSuccess += OnPairSuccess;
-               Events.Instance.OnPairMiss += OnPairMiss;
+        Events.Instance.OnPairMiss += OnPairMiss;
     }
 
     public float moveTime = 0.5f;
@@ -59,8 +59,8 @@ public class LineDraw : MonoBehaviour
 
     void OnPairSuccess(Card c1, Card c2)
     {
-        if(PairsManager.Instance.AnyWolf) return;
-        
+        if (PairsManager.Instance.AnyWolf) return;
+
         if (animateAtSuccess)
         {
             Animate(c1, c2);
@@ -74,12 +74,13 @@ public class LineDraw : MonoBehaviour
 
     public float cobineLineDelay;
     public Vector3 offset2;
+
     IEnumerator FollowDelayed(Card c1, Card c2, float delay)
     {
         yield return new WaitForSeconds(delay);
         var line = linePool.Get();
-        line.StartFollow(c1, c2, minDistance, width * c1.transform.localScale.x,offset2*c1.transform.localScale.x);
+        line.StartFollow(c1, c2, minDistance, width * c1.transform.localScale.x, offset2 * c1.transform.localScale.x);
         var line2 = linePool.Get();
-        line2.StartFollow(c1, c2, minDistance, width * c1.transform.localScale.x,-offset2*c1.transform.localScale.x);
+        line2.StartFollow(c1, c2, minDistance, width * c1.transform.localScale.x, -offset2 * c1.transform.localScale.x);
     }
 }

@@ -48,7 +48,7 @@ MonoBehaviour:
   canvas: {fileID: 6129527147068561499}
   cutoutGroup: {fileID: 6861707557273802377}
   cutoutBackGroup: {fileID: 7469327240107849207}
-  cutoutMinSize: 1
+  cutoutMinSize: 0.5
   cutoutMaxSize: 2
   cutoutScaleDuration: 0.4
   screenFadeDuration: 0.4
@@ -58,12 +58,13 @@ MonoBehaviour:
   screenShowDelay: 0
   cutoutHideDelay: 0.2
   cutoutBackHideDelay: 0
-  cutoutBackHideDuration: 0.2
+  cutoutBackHideDuration: 1.5
   screenHideDelay: 0.3
+  rotateAngle: 360
+  useRotation: 0
   testHide: 0
   testShow: 0
   testSound: {fileID: 8300000, guid: 55c9cf791c64b1c44ae72b1c03a2df35, type: 3}
-  rotateAngle: 360
 --- !u!1 &1003025254655488142
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,7 +353,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 10000, y: 10000}
+  m_SizeDelta: {x: 1000000, y: 1000000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &201451892428212675
 CanvasRenderer:
@@ -420,7 +421,7 @@ RectTransform:
   m_GameObject: {fileID: 7774381387547917396}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334422871314558149}
@@ -452,7 +453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.99919474, b: 0.86226416, a: 1}
+  m_Color: {r: 1, g: 0.5529412, b: 0.2509804, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -630,6 +631,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   save:
-    coin: 0
-    petCoin: 0
+    gold: 0
     gem: 0
+    petCoin: 0

@@ -127,6 +127,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 6d98db7c7655e7a4c97934424075f339, type: 3}
+    - target: {fileID: 3504186932480272566, guid: 93d6e544900d8ec4cac65424a0a3ca04, type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
     - target: {fileID: 4972659319093646976, guid: 93d6e544900d8ec4cac65424a0a3ca04, type: 3}
       propertyPath: m_Name
       value: Bird_parrot
@@ -177,7 +181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4972659319323630055, guid: 93d6e544900d8ec4cac65424a0a3ca04, type: 3}
       propertyPath: m_FlipX
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4972659319323630055, guid: 93d6e544900d8ec4cac65424a0a3ca04, type: 3}
       propertyPath: m_Size.y

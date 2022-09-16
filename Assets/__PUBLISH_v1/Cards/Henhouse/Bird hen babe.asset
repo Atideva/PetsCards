@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffcb63d18ae1ba47ab80121aff94445, type: 3}
   m_Name: Bird hen babe
   m_EditorClassIdentifier: 
-  glowColor: {r: 1, g: 0.7058824, b: 0.098039225, a: 1}
+  glowColor: {r: 1, g: 0.9404291, b: 0.09803921, a: 1}
   cardPrefab: {fileID: 7102569227659458678, guid: 97ab79d2b294802489041f6511f3db1b, type: 3}
   talkSound: {fileID: 11400000, guid: c6852678ec0a3644e9e4e5555a3ae6db, type: 2}
+  firstCraft: {fileID: 0}
+  secondCraft: {fileID: 0}
+  resultCraft: {fileID: 0}
   shopPrice:
     coins: 0
     gems: 0

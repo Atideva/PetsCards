@@ -46,7 +46,7 @@ namespace game.player
         [SerializeField] Transform moveToPosition;
         [SerializeField] GameObject pointsVfx;
         [SerializeField] float moveTime;
-        [SerializeField] [Range(0f, 0.5f)] float moveTimeRange;
+        [SerializeField] [Range(0f, 0.8f)] float moveTimeRange;
         [SerializeField] float onRoundWinDelay = 1;
         [Header("DEBUG")]
         [SerializeField] int totalScore;
@@ -285,7 +285,7 @@ namespace game.player
         }
 
 
-        IEnumerator CreateMovingCoin(DamageNumber dn, float scale, float moveTime, float delay)
+        IEnumerator CreateMovingCoin(DamageNumber dn, float scale, float movingTime, float delay)
         {
             yield return new WaitForSeconds(delay);
 
@@ -293,7 +293,7 @@ namespace game.player
             var vfx = Instantiate(pointsVfx, dn.transform.position, Quaternion.identity);
             vfx.transform.localScale = new Vector3(scale, scale, scale);
             yield return
-                vfx.transform.DOMove(MovePosition, moveTime).WaitForCompletion();
+                vfx.transform.DOMove(MovePosition, movingTime).WaitForCompletion();
 
             yield return new WaitForSeconds(1f);
             vfx.SetActive(false);

@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffcb63d18ae1ba47ab80121aff94445, type: 3}
   m_Name: Cat orange
   m_EditorClassIdentifier: 
-  glowColor: {r: 1, g: 0.7257274, b: 0, a: 1}
+  glowColor: {r: 1, g: 0.4399723, b: 0, a: 1}
   cardPrefab: {fileID: 7102569227659458678, guid: a8bc299cec33e5146b8ac188ec25f21a, type: 3}
   talkSound: {fileID: 11400000, guid: c3cd50a4f9c44174e85c565e25f9c0fb, type: 2}
+  firstCraft: {fileID: 0}
+  secondCraft: {fileID: 0}
+  resultCraft: {fileID: 0}
   shopPrice:
     coins: 0
     gems: 0

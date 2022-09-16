@@ -25,6 +25,10 @@ namespace __PUBLISH_v1.Scripts
         [SerializeField] float cutoutBackHideDelay;
         [SerializeField] float cutoutBackHideDuration;
         [SerializeField] float screenHideDelay;
+        [Header("Rotation")]
+        public float rotateAngle = 360;
+        public bool useRotation;
+
         public float ShowTime => cutoutBackShowDuration;
         [Header("Test")]
         public bool testHide;
@@ -48,10 +52,13 @@ namespace __PUBLISH_v1.Scripts
         public void Show()
         {
             canvas.enabled = true;
+            cutoutGroup.transform.localScale = new Vector3(cutoutMaxSize, cutoutMaxSize, cutoutMaxSize);
             cutoutBackGroup
                 .DOFade(1, cutoutBackShowDuration)
                 .SetDelay(cutoutBackShowDelay);
-            cutoutGroup.transform.DOLocalRotate(new Vector3(0, 0, rotateAngle), cutoutScaleDuration).SetRelative(true);
+            if (useRotation)
+                cutoutGroup.transform.DOLocalRotate(new Vector3(0, 0, rotateAngle), cutoutScaleDuration)
+                    .SetRelative(true);
             cutoutGroup.transform
                 .DOScale(cutoutMinSize, cutoutScaleDuration)
                 .SetDelay(cutoutShowDelay);
@@ -60,18 +67,21 @@ namespace __PUBLISH_v1.Scripts
                 .SetDelay(screenShowDelay);
         }
 
-        public float rotateAngle = 360;
+
         public void Hide()
         {
             KillTween();
             UnityMagic();
 
+            if (useRotation)
+                cutoutGroup.transform.DOLocalRotate(new Vector3(0, 0, -rotateAngle), cutoutScaleDuration)
+                    .SetRelative(true);
             cutoutBackGroup
                 .DOFade(0, cutoutBackHideDuration)
                 .SetDelay(cutoutBackHideDelay);
-            cutoutGroup.transform
-                .DOScale(cutoutMaxSize, cutoutScaleDuration)
-                .SetDelay(cutoutHideDelay);
+     cutoutGroup.transform
+         .DOScale(cutoutMaxSize, cutoutScaleDuration)
+         .SetDelay(cutoutHideDelay);
             cutoutGroup
                 .DOFade(0, screenFadeDuration)
                 .SetDelay(screenHideDelay)

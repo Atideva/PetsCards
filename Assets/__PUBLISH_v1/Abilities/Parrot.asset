@@ -15,5 +15,5 @@ MonoBehaviour:
   type: 0
   prefab: {fileID: 8579541706537898159, guid: bd0778ba27ce1f9439440ff33afa58ef, type: 3}
   abilityName: PARROT
-  description: help to open one pair
+  description: open one pair
   sound: {fileID: 11400000, guid: 282479b4b652926418887efdceaff1ca, type: 2}

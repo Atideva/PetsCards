@@ -38,11 +38,14 @@ namespace Scenes.TestBug
         [SerializeField] ParticleSystem confettiVfxLeft;
         [SerializeField] ParticleSystem confettiVfxRight;
         [SerializeField] DOTweenAnimation starsAnimation;
+
         [SerializeField] CanvasGroup starsGroup;
         [SerializeField] CanvasGroup applauseGroup;
         [Header("UI")]
         [SerializeField] WinCollectUI collectUI;
         [SerializeField] WInPlayUI playUI;
+        [SerializeField] CatAnimation catAnim;
+        [SerializeField] DOTweenAnimation catHeadAnim;
         [Header("TEST")]
         public LevelConfig testCurrent;
         public LevelConfig testNext;
@@ -97,6 +100,8 @@ namespace Scenes.TestBug
            // EnableGroup(starsGroup);
             Show(starsGroup,0.2f,0.2f);
             //   StarsAnimation(popupDelay + 0.4f);
+            catAnim.Enable();
+            catHeadAnim.DOPlay();
             ConfettiAnimation(confettiDelay);
         }
 

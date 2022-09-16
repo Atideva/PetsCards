@@ -15,5 +15,5 @@ MonoBehaviour:
   type: 0
   prefab: {fileID: 8579541706537898159, guid: a26c1a5cb23eeeb4d892aa1953481bed, type: 3}
   abilityName: ONION
-  description: x2 coins
+  description: double coins
   sound: {fileID: 11400000, guid: 4a7c6666dd23ee440aa0cc52227601f7, type: 2}

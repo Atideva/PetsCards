@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffcb63d18ae1ba47ab80121aff94445, type: 3}
   m_Name: Bird hen brown
   m_EditorClassIdentifier: 
-  glowColor: {r: 1, g: 0.4924242, b: 0, a: 1}
+  glowColor: {r: 0.30763817, g: 1, b: 0, a: 1}
   cardPrefab: {fileID: 7102569227659458678, guid: 82a50777c4b254849a0b1bd575aa6b70, type: 3}
   talkSound: {fileID: 11400000, guid: c7f4b16dc65362c44bb797c131b38dcb, type: 2}
   firstCraft: {fileID: 0}

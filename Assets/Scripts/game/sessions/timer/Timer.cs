@@ -45,8 +45,10 @@ namespace game.sessions.timer
 
             if (Seconds > 0)
                 Seconds -= Time.deltaTime;
-            else
+
+            if (Seconds <= 0)
                 TimeOver();
+
 
             CheckState();
         }
@@ -120,8 +122,8 @@ namespace game.sessions.timer
 
         void TimeOver()
         {
-            Pause();
             Events.Instance.TimeOver();
+            Pause();
         }
 
 

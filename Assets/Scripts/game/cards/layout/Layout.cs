@@ -39,7 +39,7 @@ namespace game.cards.layout
         [SerializeField] bool turnCardsBackAtStart;
         [SerializeField] float cardRealSizeX = 1.0f;
         [SerializeField] float cardRealSizeY = 1.6f;
-
+        [SerializeField] float spawnDelay = 0.5f;
         // [Header("Setup")]
         // [SerializeField] Image deckIcon;
         // [SerializeField] Sprite deckActive;
@@ -330,9 +330,6 @@ namespace game.cards.layout
             if (animType == AnimationType.Instant) StartCoroutine(InstantSpawn(shuffleList));
             if (animType == AnimationType.MoveFromSpawn) StartCoroutine(MoveFromSpawn(shuffleList));
         }
-
-
-        [SerializeField] float spawnDelay = 0.5f;
 
         IEnumerator InstantSpawn(List<Card> playingCards)
         {

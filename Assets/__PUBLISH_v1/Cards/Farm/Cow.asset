@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffcb63d18ae1ba47ab80121aff94445, type: 3}
   m_Name: Cow
   m_EditorClassIdentifier: 
-  glowColor: {r: 1, g: 0.88844866, b: 0.40943396, a: 1}
+  glowColor: {r: 1, g: 1, b: 1, a: 1}
   cardPrefab: {fileID: 7102569227659458678, guid: 15f6b4451ecd1c442a7cd69f9c007832, type: 3}
   talkSound: {fileID: 11400000, guid: 8ab9399686feec04990d8d715ffa2e56, type: 2}
+  firstCraft: {fileID: 0}
+  secondCraft: {fileID: 0}
+  resultCraft: {fileID: 0}
   shopPrice:
     coins: 0
     gems: 0

@@ -73,6 +73,6 @@ namespace game.cards.ability
             VfxFinish = false;
         }
 
-        void Flip(Card card) => Events.Instance.Flip(card, true, Ease.OutElastic,1f);
+        void Flip(Card card) => Events.Instance.Flip(card, true, Ease.OutElastic);
     }
 }
