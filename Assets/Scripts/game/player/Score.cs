@@ -66,9 +66,11 @@ namespace game.player
         float _basicSpeed, _basicMinX, _basicMaxX, _basicMinY, _basicMaxY;
         float _comboSpeed, _comboMinX, _comboMaxX, _comboMinY, _comboMaxY;
         readonly List<int> _lastComboRow = new();
+
         public int TotalScore => totalScore;
-      //  Vector3 MovePosition => _camera.ScreenToWorldPoint(moveToPosition.position);
-        Vector3 MovePosition =>  moveToPosition.position ;
+
+        //  Vector3 MovePosition => _camera.ScreenToWorldPoint(moveToPosition.position);
+        Vector3 MovePosition => moveToPosition.position;
         float RandomMoveTime => moveTime * Random.Range(1 - moveTimeRange, 1 + moveTimeRange);
 
         int CalculateScore(int comboRow) =>
@@ -96,30 +98,44 @@ namespace game.player
             if (coinForCombineCards)
             {
                 Events.Instance.OnCombine += OnCombine;
+                Events.Instance.OnCreateCoins += OnCreateCoins;
             }
 
             Events.Instance.OnRoundWin += OnRoundWin;
             Events.Instance.OnComboSuccess += OnComboSuccess;
             Events.Instance.OnComboBreak += OnComboEnded;
 
-
             Events.Instance.OnAddScoreMultiplier += AddMultiplier;
             Events.Instance.OnRemoveScoreMultiplier += RemoveMultiplier;
         }
 
-        void OnCombine(Card c1, Card c2)
+        void OnCreateCoins(Card c1, Card c2)
         {
-            if (_isDisable) return;
-            if (_lastComboRow.Count == 0) return;
-            var comboRow = _lastComboRow[^1];
-            _lastComboRow.Remove(_lastComboRow.Count - 1);
-            var earnedPoints = CalculateScore(comboRow);
+            var earnedPoints = CalculateScore(lastCombo > 0 ? lastCombo : 1);
             var cardScale = c1.transform.localScale.x;
             for (var i = 0; i < earnedPoints; i++)
             {
                 var dn = basicPoints.CreateNew(earnedPoints, c1.transform.position + offset * cardScale);
                 ScaleBasic(dn, cardScale);
-                CreateMoveCoin(earnedPoints, dn, cardScale, RandomMoveTime, dn.lifetime-0.1f);
+                CreateMoveCoin(earnedPoints, dn, cardScale, RandomMoveTime, dn.lifetime - 0.1f);
+            }
+        }
+
+        int lastCombo;
+
+        void OnCombine(Card c1, Card c2)
+        {
+            if (_isDisable) return;
+            if (_lastComboRow.Count == 0) return;
+            lastCombo = _lastComboRow[^1];
+            _lastComboRow.Remove(_lastComboRow.Count - 1);
+            var earnedPoints = CalculateScore(lastCombo);
+            var cardScale = c1.transform.localScale.x;
+            for (var i = 0; i < earnedPoints; i++)
+            {
+                var dn = basicPoints.CreateNew(earnedPoints, c1.transform.position + offset * cardScale);
+                ScaleBasic(dn, cardScale);
+                CreateMoveCoin(earnedPoints, dn, cardScale, RandomMoveTime, dn.lifetime - 0.1f);
             }
         }
 
@@ -157,9 +173,9 @@ namespace game.player
 
                     if (useVfx)
                     {
-                        CreateMoveCoin(coinValue, number1 , cardScale, RandomMoveTime,
+                        CreateMoveCoin(coinValue, number1, cardScale, RandomMoveTime,
                             number1.lifetime);
-                        CreateMoveCoin(coinValue, number2 , cardScale, RandomMoveTime,
+                        CreateMoveCoin(coinValue, number2, cardScale, RandomMoveTime,
                             number2.lifetime);
                     }
                     else
@@ -200,9 +216,9 @@ namespace game.player
                         // number2.lifetime = 2;
                         if (useVfx)
                         {
-                            CreateMoveCoin(coinValue, number1 , cardScale, RandomMoveTime,
+                            CreateMoveCoin(coinValue, number1, cardScale, RandomMoveTime,
                                 number1.lifetime);
-                            CreateMoveCoin(coinValue, number2 , cardScale, RandomMoveTime,
+                            CreateMoveCoin(coinValue, number2, cardScale, RandomMoveTime,
                                 number2.lifetime);
                         }
                         else
@@ -245,7 +261,7 @@ namespace game.player
             if (txtB) txtB.color = clr;
         }
 
-        void CreateMoveCoin(int score,DamageNumber dn,  float scale, float moveTime, float coinDelay)
+        void CreateMoveCoin(int score, DamageNumber dn, float scale, float moveTime, float coinDelay)
         {
             StartCoroutine(CreateMovingCoin(dn, scale, moveTime, coinDelay));
             StartCoroutine(AddPoints(score, moveTime + coinDelay));

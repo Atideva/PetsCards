@@ -361,6 +361,8 @@ namespace game.managers
         public event Action<int> OnRoundWin = delegate { };
         public void RoundWin(int totalPairs) => OnRoundWin(totalPairs);
 
+        public event Action<Card,Card> OnCreateCoins = delegate { };
+        public void CreateCoins(Card c1,Card c2) => OnCreateCoins(c1,c2);
 
         //
         //

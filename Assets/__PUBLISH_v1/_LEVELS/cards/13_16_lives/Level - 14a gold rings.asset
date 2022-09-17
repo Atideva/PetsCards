@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5601fa027e5f90e4c80bfb6d09a5ff7d, type: 3}
-  m_Name: Level - 14a mr onion
+  m_Name: Level - 14a gold rings
   m_EditorClassIdentifier: 
   deckType: 0
   cardFrame: {fileID: 21300000, guid: 39129b3ccbd7868489042d2e58f75346, type: 3}
@@ -18,4 +18,4 @@ MonoBehaviour:
   rotateSound: {fileID: 0}
   uniqueCardsDebug: 1
   cards:
-  - {fileID: 11400000, guid: 62c56c4d48bddbc47b105e4fa913ae18, type: 2}
+  - {fileID: 11400000, guid: cb7bb6e18ffd4d2489769c48cae11ef9, type: 2}

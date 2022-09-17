@@ -23,7 +23,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0ac862664a988114db40909343ace060, type: 2}
   - {fileID: 11400000, guid: ac669571894a52e49ab4273a6c1be3f8, type: 2}
   uniqueCards: 010000000200000003000000030000000200000003000000
-  lvlName: mr. onion
-  icon: {fileID: 21300000, guid: b3a5dfbffe724a54c92c5c8f2dea0be9, type: 3}
+  lvlName: Gold ring
+  icon: {fileID: 21300000, guid: c4d7a69e6ee4dc24c929c31796a3e2c5, type: 3}
   autoSetScene: 1
   sceneToLoad: Level 14

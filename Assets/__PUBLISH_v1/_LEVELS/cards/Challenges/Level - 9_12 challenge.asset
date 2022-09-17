@@ -10,19 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5601fa027e5f90e4c80bfb6d09a5ff7d, type: 3}
-  m_Name: Level - 17a Heart's Challenge
+  m_Name: Level - 9_12 challenge
   m_EditorClassIdentifier: 
   deckType: 0
   cardFrame: {fileID: 21300000, guid: 39129b3ccbd7868489042d2e58f75346, type: 3}
   cardBackImage: {fileID: 21300000, guid: 89a95f7ee7e405e45b57200a85326d4c, type: 3}
   rotateSound: {fileID: 0}
-  uniqueCardsDebug: 5
+  uniqueCardsDebug: 4
   cards:
-  - {fileID: 11400000, guid: b8eeb0061f3ab6a419b0c6ed953af44a, type: 2}
-  - {fileID: 11400000, guid: fb67461528483cd4eadc3a4c18d32027, type: 2}
-  - {fileID: 11400000, guid: 65d287ef65b91d2449dbb7a9c1c2fe03, type: 2}
+  - {fileID: 11400000, guid: 8eba5f9a81cd8ef43a83002d4320225d, type: 2}
+  - {fileID: 11400000, guid: 8eba5f9a81cd8ef43a83002d4320225d, type: 2}
+  - {fileID: 11400000, guid: 8eba5f9a81cd8ef43a83002d4320225d, type: 2}
+  - {fileID: 11400000, guid: f63ae8df758f10940b7c4a9659b72f4d, type: 2}
+  - {fileID: 11400000, guid: f63ae8df758f10940b7c4a9659b72f4d, type: 2}
+  - {fileID: 11400000, guid: f63ae8df758f10940b7c4a9659b72f4d, type: 2}
   - {fileID: 11400000, guid: e8764a7846185554aa038e1d29835579, type: 2}
   - {fileID: 11400000, guid: e8764a7846185554aa038e1d29835579, type: 2}
-  - {fileID: 11400000, guid: e5d76673cfe772440934343bd2943926, type: 2}
-  - {fileID: 11400000, guid: e5d76673cfe772440934343bd2943926, type: 2}
+  - {fileID: 11400000, guid: e8764a7846185554aa038e1d29835579, type: 2}
   - {fileID: 11400000, guid: e5d76673cfe772440934343bd2943926, type: 2}
