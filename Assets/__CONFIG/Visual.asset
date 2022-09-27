@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iconGold: {fileID: 21300000, guid: 68f145593af98084f9d257e8b91068d9, type: 3}
   iconPetCoin: {fileID: 21300000, guid: 7723ea0390704254bad5533cc7d6e624, type: 3}
-  iconGem: {fileID: 21300000, guid: 8910ed967da90d5448b0480765c0fff4, type: 3}
+  iconGem: {fileID: 21300000, guid: e509d86110f16804694d08e33568a68c, type: 3}
